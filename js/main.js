@@ -127,44 +127,6 @@ function mainSlider() {
 }
 
 
-/*=============================================
-	=         Up Coming Movie Active        =
-=============================================*/
-$('.ucm-active').owlCarousel({
-	loop: true,
-	margin: 30,
-	items: 4,
-	autoplay: false,
-	autoplayTimeout: 5000,
-	autoplaySpeed: 1000,
-	navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
-	nav: true,
-	dots: false,
-	responsive: {
-		0: {
-			items: 1,
-			nav: false,
-		},
-		575: {
-			items: 2,
-			nav: false,
-		},
-		768: {
-			items: 2,
-			nav: false,
-		},
-		992: {
-			items: 3,
-		},
-		1200: {
-			items: 4
-		},
-	}
-});
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-	$(".ucm-active").trigger('refresh.owl.carousel');
-});
-
 
 /*=============================================
 	=         Up Coming Movie Active        =
@@ -222,74 +184,7 @@ $('.brand-active').slick({
 });
 
 
-/*=============================================
-	=         Gallery-active           =
-=============================================*/
-$('.gallery-active').slick({
-	centerMode: true,
-	centerPadding: '350px',
-	slidesToShow: 1,
-	prevArrow: '<span class="slick-prev"><i class="fas fa-caret-left"></i> previous</span>',
-	nextArrow: '<span class="slick-next">Next <i class="fas fa-caret-right"></i></span>',
-	appendArrows: ".slider-nav",
-	responsive: [
-		{
-			breakpoint: 1800,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				centerPadding: '220px',
-				infinite: true,
-			}
-		},
-		{
-			breakpoint: 1500,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				centerPadding: '180px',
-				infinite: true,
-			}
-		},
-		{
-			breakpoint: 1200,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				centerPadding: '160px',
-				arrows: false,
-				infinite: true,
-			}
-		},
-		{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 1,
-				centerPadding: '60px',
-				arrows: false,
-				slidesToScroll: 1
-			}
-		},
-		{
-			breakpoint: 767,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				centerPadding: '0px',
-				arrows: false,
-			}
-		},
-		{
-			breakpoint: 575,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				centerPadding: '0px',
-				arrows: false,
-			}
-		},
-	]
-});
+
 
 /*=============================================
 	=    		Odometer Active  	       =
